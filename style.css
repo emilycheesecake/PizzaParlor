@@ -1,0 +1,124 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: lightgray;
+}
+
+nav ul{
+  display: flex;
+  flex-flow: column;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  background-color: grey;
+  border-bottom: 4px solid red;
+}
+
+nav ul > li {
+  align-items: flex-start;
+  padding: 15px;
+  background-color: grey;
+  color: white;
+}
+
+nav ul > li:hover {
+  background-color: black;
+}
+
+nav ul > li > a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+form {
+  margin-top: 30px;
+}
+
+input, select{
+  display: flex;
+}
+
+input[type=text], input[type=tel], input[type=number], select {
+  min-width: 90%;
+  padding: 10px 15px;
+  border: 2px solid red;
+  margin: 10px;
+}
+
+label {
+  padding: 10px;
+}
+
+blockquote {
+  font-style: italic;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.nav-background {
+  height: 200px;
+  background-image: url("navimg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.menu-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.menu-item {
+  flex: 1 300px;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+}
+
+.menu-item > img {
+  max-height: 200px;
+}
+
+.order-container {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.form-col {
+  flex: 1;
+  width: 100%;
+}
+
+.social-col {
+  flex: 1;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  background-color: lightblue;
+}
+
+@media screen and (min-width: 568px) {
+  nav ul, .order-container {
+    flex-flow: row;
+  }
+
+  form {
+    padding: 0px;
+    margin: 30px;
+    margin-top: 50px;
+  }
+
+  input[type=text], input[type=tel], input[type=number], select {
+    min-width: 60%;
+  }
+
+  .form-col {
+    flex: 60%;
+  }
+
+  .social-col {
+    flex: 40%;
+  }
+}
