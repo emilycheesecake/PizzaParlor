@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 body {
+  font-family: 'Roboto', sans-serif;
   margin: 0px;
   padding: 0px;
   background-color: lightgray;
@@ -51,9 +54,14 @@ label {
 
 blockquote {
   font-style: italic;
+}
+
+.review {
+  margin: 20px;
   background-color: white;
   border-radius: 10px;
-  padding: 10px;
+  padding: 5px;
+  box-shadow: 5px 5px 5px black;
 }
 
 .nav-background {
@@ -83,7 +91,6 @@ blockquote {
 .order-container {
   display: flex;
   flex-flow: column;
-  align-items: center;
 }
 
 .form-col {
@@ -91,15 +98,22 @@ blockquote {
   width: 100%;
 }
 
-.social-col {
-  flex: 1;
-  width: 100%;
-  padding: 20px;
-  text-align: center;
-  background-color: lightblue;
+form > h1 {
+  font-size: 32px;
 }
 
-@media screen and (min-width: 568px) {
+.social-col {
+  flex: 1;
+  width: 90%;
+  padding: 20px;
+  text-align: center;
+}
+
+.social-col > a > img {
+  width: 48px;
+}
+
+@media screen and (min-width: 578px) {
   nav ul, .order-container {
     flex-flow: row;
   }

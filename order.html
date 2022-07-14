@@ -21,23 +21,21 @@
         <li><a href="menu.html">Menu</a></li>
         <li><a href="">Our Location</a></li>
       </ul>
-    <nav>
+    </nav>
 
     <div class="order-container">
       <div class="form-col">
         <form>
-          <label for="fname">First Name </label>
+          <h1>Enter Your Order</h1>
+          <h3>Delivered in 30 minutes or it's free!</h3>
           <input autofocus type="text" name="fname" placeholder="First Name" required>
 
-
-          <label for="lname">Last Name:</label>
           <input type="text" name="lname" placeholder="Last Name" required>
 
-          <label for="pnum">Phone Number:</label>
           <input type="tel" name="pnum" placeholder="Phone Number" required>
 
           <label for="pizzas">Desired Pizza</label>
-          <select name="pizzas">
+          <select name="pizzas" id="pizzas">
             <option value="Pepperoni">Pepperoni</option>
             <option value="Cheese">Cheese</option>
             <option value="Meat Lovers">Meat Lovers</option>
@@ -47,7 +45,7 @@
           </select>
 
           <label for="quantity">Quantity</label>
-          <input type="number" name="quantity" required>
+          <input type="number" name="quantity" id="quantity" required>
 
           <input type="submit" value="Place Order">
 
@@ -56,13 +54,26 @@
 
       <div class="social-col">
         <h2>Customer Testimonials</h2>
-        <blockquote>Entire experience, from the friendly service and cozy interior to the delicious and incredibly filling food, was amazing!<br>-John Smith</blockquote>
-        <blockquote>Amazing food!! Great service!! Heather the lady that man's the front and the ordering is nice and remembers me by name. I always appreciate that! You always get greeted with a smile! A must for lunch!<br>-Brittany Mitchell</blockquote>
-        <h3>Social Links</h3>
-        <a href="">Facebook</a>
-        <a href="">Twitter</a>
-        <a href="">Yelp</a>
-      <div>
+
+        <div class="review">
+          <blockquote>"Entire experience, from the friendly service and cozy interior to the delicious and incredibly filling food, was amazing!"</blockquote>
+          <p>-John Smith</p>
+          <p>7/13/2022</p>
+        </div>
+
+        <div class="review">
+          <blockquote>"Amazing food!! Great service!! The lady in the front is nice and remembers me by name. I always appreciate that! You always get greeted with a smile! A must for lunch!"</blockquote>
+          <p>-Brittany Mitchell</p>
+          <p>7/13/2022</p>
+        </div>
+
+        <h3>Problem?</h3>
+        <p>We want to make it right. Shoot us an email at <a href="mailto:support@cheechspizza.com">support@cheechspizza.com</a></p>
+
+        <h3>Social Media</h3>
+        <a href=""><img src="facebook.png" alt="facebook social icon"></a>
+        <a href=""><img src="twitter.png" alt="twitter social icon"></a>
+      </div>
     </div>
 
 
